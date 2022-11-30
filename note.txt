@@ -1,0 +1,50 @@
+
+hello,
+my name is adimar alimuddin
+i am a <web/> developer
+And i love to have fun with code
+to code
+to have fun
+let's make something cool togather
+
+i'm passionate on what i do
+i strive to cusscess on my goal!
+i stay updated with techs
+i'm a college degree also a sefl taught
+i play slow-rock musics while coding!
+keep learning
+
+i love to have fun creatively!
+i'm commited on project once i started-----
+cleaner ui and cleaner code 
+ 
+
+
+git
+github
+heroku
+vercel
+bootstrap
+
+responsive
+intuitive
+fast
+accessible
+
+
+recruters looking for*********************
+history in using tech
+build cool things
+passionate on the technologies
+
+
+
+history projects************************
+how did you build it
+what problems were you trying to solve
+what were some of the design decisions
+what would you learn along the way
+what would you change next time
+
+************************ note
+must have detail on each project when clicked
