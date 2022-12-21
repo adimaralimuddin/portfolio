@@ -1,0 +1,46 @@
+@media (max-width: 1000px) {
+  #contact-main {
+    gap: 0;
+  }
+  #contact-div {
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  #contact-main {
+    flex-direction: column;
+  }
+  #contact-footer-div {
+    align-items: center;
+  }
+  #contact-footer {
+    align-items: center;
+    text-align: center;
+  }
+  .project-cap {
+    max-width: 400px;
+  }
+  #menus {
+    display: none;
+  }
+  #burger {
+    display: block;
+  }
+}
+
+@media (min-width: 800px) {
+  #mobile-menus {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-texts {
+    max-width: 400px;
+  }
+}

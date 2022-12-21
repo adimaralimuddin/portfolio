@@ -1,0 +1,239 @@
+#project-div {
+  z-index: 15;
+  background-color: var(--project-bg);
+  padding-top: 60px;
+  /* border: 1px solid red; */
+}
+#poject-title {
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  color: var(--title);
+}
+#project-subtitle {
+  text-align: center;
+  max-width: 400px;
+  color: var(--subtitle);
+  padding: 20px;
+  padding-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+  padding: 7% 10px;
+  padding-top: 10px;
+  row-gap: 10px;
+  scroll-snap-align: start;
+}
+.project-cap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  min-width: 270px;
+  max-width: 350px;
+  gap: 7px;
+  text-align: left;
+}
+.project-cap-name {
+  color: rgb(71, 71, 110);
+  color: #273344b4;
+  color: var(--title);
+  font-size: 1.4rem;
+}
+.project-cap-desc {
+  color: rgb(65, 65, 68);
+  color: var(--subtitle);
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.project-features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project-features .features-text {
+  color: rgb(56, 140, 151);
+
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.project-features .features-lists {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  color: #34455cb6;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+.dark-mode .project-features .features-lists {
+  color: #768eafb6;
+}
+.project-techs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 13px;
+}
+.project-techs .techs-text {
+  color: rgb(56, 140, 151);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.project-techs .techs-lists {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  line-height: 0.9;
+  gap: 5px;
+}
+.project-techs li {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgba(84, 101, 128, 0.521);
+  color: white;
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+.dark-mode .project-techs li {
+  background-color: rgba(46, 56, 71, 0.521);
+  color: rgb(126, 135, 148);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.205);
+}
+.project-actions {
+  padding-top: 20px;
+}
+.card-div {
+  flex: 1;
+  position: relative;
+  z-index: 70;
+  width: 400px;
+  transform-style: preserve-3d;
+  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.438));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  min-width: 270px;
+}
+.card {
+  z-index: 90;
+  top: 0;
+  position: relative;
+  max-width: 400px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transform-style: preserve-3d;
+  transition-duration: 0.1s;
+  transition-property: all;
+  animation: test 1s infinite alternate;
+}
+
+.card-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.card-img-div {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.multi-card {
+  padding: auto 50px;
+}
+.multi-card .card {
+  max-width: 350px;
+  min-width: 100px;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.dark-mode .card-img {
+  filter: brightness(0.8);
+}
+
+.card-img-1 {
+  transform: translate3d(0, 0, 20px);
+}
+.card-img-2 {
+  transform: translate3d(0, 0, 30px);
+}
+.card-img-3 {
+  transform: translate3d(0, 0, 40px);
+}
+.card-img-4 {
+  transform: translate3d(0, 0, 50px);
+}
+.card-img-5 {
+  transform: translate3d(0, 0, 60px);
+}
+.card-img-6 {
+  transform: translate3d(0, 0, 70px);
+}
+.card-img-7 {
+  transform: translate3d(0, 0, 80px);
+}
+.card-img-8 {
+  transform: translate3d(0, 0, 90px);
+}
+.card-img-9 {
+  transform: translate3d(0, 0, 100px);
+}
+.card-img-10 {
+  transform: translate3d(0, 0, 110px);
+}
+
+.card-item {
+  z-index: 1;
+}
+
+.card-item-2 {
+  z-index: 1;
+}
+.card-item-3 {
+  z-index: 1;
+}
+
+
+
+.tasky-card-1 {
+  transform-style: preserve-3d;
+  right: -10%;
+  top: 7%;
+}
+.tasky-card-2 {
+  width: 50%;
+  transform-style: preserve-3d;
+  right: -15%;
+  top: 65%;
+}
+.tasky-card-3 {
+  left: -4%;
+  top: 40%;
+  transform-style: preserve-3d;
+  width: 70%;
+}
+.tasky-card-4 {
+  transform-style: preserve-3d;
+  top: 58%;
+  left: 5%;
+  width: 70%;
+}
+.shadow {
+  box-shadow: 1px 1px 10px gray;
+}

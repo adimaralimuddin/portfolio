@@ -1,0 +1,120 @@
+#stacks-main {
+  background-color: var(--stack-bg);
+  background: linear-gradient(to top, var(--stack-bg), transparent);
+
+  padding-top: 50px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 15;
+}
+
+.dark-mode #stacks-main {
+  background-image: linear-gradient(
+    to bottom,
+    #1a232c,
+    #19222c,
+    #18202c,
+    #171f2c,
+    #171d2c,
+    #181c2c,
+    #191a2c,
+    #1b192b,
+    #1d182a,
+    #1e1729,
+    #201528,
+    #221427
+  );
+  background-image: linear-gradient(
+    to bottom,
+    #1a232c,
+    #19222c,
+    #18202c,
+    #171f2c,
+    #171d2c,
+    #171b2b,
+    #17192a,
+    #171729,
+    #161526,
+    #161324,
+    #161121,
+    #150e1f
+  );
+}
+
+#stacks-contents {
+  display: flex;
+  gap: 10px;
+  padding: 5px 3%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#stack-title {
+  color: var(--title);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 1.9rem;
+}
+
+#stack-subtitle {
+  color: var(--subtitle);
+  text-align: center;
+  padding-top: 5px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
+
+.stack-item {
+  flex: 1;
+  padding: 15px 10px;
+  background-color: var(--stack-card);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stack-item-title {
+  font-size: 1rem;
+  color: var(--stack-card-title);
+  padding: 3px;
+}
+
+.stack-lists {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.stack-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.stack-list-img {
+  height: 23px;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: contain;
+}
+.dark-mode .stack-list-img {
+  filter: brightness(0.9);
+}
+
+.stack-list-name {
+  font-size: 0.8rem;
+  color: var(--stack-card-text);
+  font-weight: 400;
+}

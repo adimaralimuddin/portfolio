@@ -4,11 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="defStyle.css" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="/assets/images/adimar.png" />
+    <link rel="stylesheet" href="defStyle.css" />
+    <link rel="stylesheet" href="animation.css" />
     <link rel="stylesheet" href="fancyStyles.css" />
-    <!-- <link rel="stylesheet" href="tokostyle.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="headerStyle.css" />
+    <link rel="stylesheet" href="captionStyle.css" />
+    <link rel="stylesheet" href="bigProjects.css" />
+    <link rel="stylesheet" href="miniProjects.css" />
+    <link rel="stylesheet" href="stackStyle.css" />
+    <link rel="stylesheet" href="contactStyle.css" />
+    <link rel="stylesheet" href="aboutStyle.css" />
+    <link rel="stylesheet" href="footerStyle.css" />
+    <link rel="stylesheet" href="screenSizeStyle.css" />
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -19,7 +28,7 @@
       })();
     </script>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap");
     </style>
     <title>Adimar Alimuddin</title>
   </head>
@@ -27,7 +36,9 @@
   <body>
     <header id="header" class="inactive-header">
       <div id="header-content">
-        <h2 id="logo">ADIMAR</h2>
+        <h2 id="logo">
+          <a href="#"> Aisha. </a>
+        </h2>
         <ul id="menus">
           <li class="menu">
             <a href="#project-div">Works</a>
@@ -36,27 +47,39 @@
             <a href="#stacks-main">Skills</a>
           </li>
           <li class="menu">
-            <a href="#contac-anchor">contact</a>
+            <a href="#about-main">about</a>
           </li>
           <li class="menu">
-            <a href="">about</a>
-          </li>
-          <li>
-            <img id="toggle" src="/assets/images/moon.png" />
+            <a href="#contac-anchor">contact</a>
           </li>
         </ul>
+        <div id="burger-div">
+          <img id="burger" src="/assets/images/menu-light.png" alt="" />
+          <img id="toggle" src="/assets/images/moon.png" />
+        </div>
       </div>
+      <span style="position: relative; width: 100%">
+        <ul id="mobile-menus">
+          <li class="mobile-menu" onclick="toggleMenu">
+            <a href="#project-div">Works</a>
+          </li>
+          <li class="mobile-menu">
+            <a href="#stacks-main">Skills</a>
+          </li>
+          <li class="mobile-menu">
+            <a href="#about-main">about</a>
+          </li>
+          <li class="mobile-menu">
+            <a href="#contac-anchor">contact</a>
+          </li>
+        </ul>
+      </span>
+      <!-- <div style="border: 1px solid green; width: 100%; flex: 1"></div> -->
     </header>
     <div id="content">
       <!-- CAPTION -->
       <section id="caption-main">
-        <!-- <div id="caption-img-div">
-          <img id="caption-img" src="/assets/images/caption-img.png" />
-        </div> -->
-        <div
-          style="text-align: left; align-items: flex-start"
-          id="caption-text"
-        >
+        <div id="caption-text">
           <h2 style="white-space: nowrap" id="caption-hello">Hi, My Name Is</h2>
           <h1 id="caption-name" style="white-space: nowradp">
             Adimar Alimuddin
@@ -64,14 +87,34 @@
           <section class="typing-container">
             <p>I <span class="typing-text"></span></p>
           </section>
-          <a href="#project-anchor">
+          <a href="#project-div">
             <button id="caption-action">See My Works Bellow</button>
           </a>
         </div>
+        <div id="hero-bottom-1" class="t hero-bottom-1"></div>
+        <div id="hero-bottom-2" class="t hero-bottom-2"></div>
+        <div id="hero-bottom-3" class="t hero-bottom-3"></div>
+        <!-- <img
+          id="hero-bottom-1"
+          class="hero-bottom hero-bottom-1"
+          src="/assets/images/hero-bottom-1.svg"
+          alt=""
+        />
+        <img
+          id="hero-bottom-2"
+          class="hero-bottom hero-bottom-2"
+          src="/assets/images/hero-buttom-2.svg"
+          alt=""
+        />
+        <img
+          id="hero-bottom-3"
+          class="hero-bottom hero-bottom-3"
+          src="/assets/images/hero-bottom-3.svg"
+          alt=""
+        /> -->
       </section>
 
       <!-- PROJECTS -->
-
       <div id="project-div">
         <h2 id="poject-title">Real Word Projects</h2>
         <p id="project-subtitle">
@@ -79,20 +122,125 @@
           preview live as well as it's source code.
         </p>
 
-        <div id="kenal_section" class="container">
-          <div class="extra">
-            <h3 class="project-item-name">TOKO</h3>
-            <p class="project-item-desc">
-              Toko is a full E-commerce platform with payment features this is
-              built with nextjs,material ui,mongodb, redux-toolkit and others.
+        <div class="container wrap-reverse" id="tasky_section">
+          <div class="card-div">
+            <div class="card" id="tasky_card">
+              <img
+                src="/assets/projects/tasky/layer-1.png"
+                alt="project preview"
+                class="card-img-1"
+              />
+              <img
+                src="/assets/projects/tasky/layer-2.png"
+                alt="project preview"
+                class="card-img card-img-2"
+              />
+              <img
+                src="/assets/projects/tasky/layer-3.png"
+                alt="project preview"
+                class="card-img card-img-3"
+              />
+              <img
+                src="/assets/projects/tasky/layer-4.png"
+                alt="project preview"
+                class="card-img card-img-5"
+              />
+              <img
+                src="/assets/projects/tasky/layer-5.png"
+                alt="project preview"
+                class="card-img card-img-6"
+              />
+              <img
+                src="/assets/projects/tasky/layer-6.png"
+                alt="project preview"
+                class="card-img card-img-7"
+              />
+              <img
+                src="/assets/projects/tasky/layer-7.png"
+                alt="project preview"
+                class="card-img card-img-8"
+              />
+            </div>
+          </div>
+          <div class="project-cap">
+            <h3 class="project-cap-name">Tasky</h3>
+            <p class="project-cap-desc">
+              tasky is an online
+              <span class="high">Flash Card Manager</span> that focuses on
+              providing dynamic data type and structure while being fast and
+              intuitive and modern.
             </p>
+            <!-- <br /> -->
+            <div class="project-features">
+              <h3 class="features-text">FEATURES</h3>
+              <small class="features-lists"
+                >custum & dynamic data | play | quiz | fast | audio & images |
+                classes | templates | dark theme |
+              </small>
+            </div>
+            <div class="project-techs">
+              <h3 class="techs-text">STACKS</h3>
+              <ul class="techs-lists">
+                <li>next js</li>
+                <li>tailwind</li>
+                <li>auth0</li>
+                <li>prisma</li>
+                <li>graphql</li>
+                <li>redux-toolkit</li>
+                <li>zustand</li>
+                <li>react-query</li>
+                <li>nexus</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a
+                target="_blank"
+                href="https://tasky-production.up.railway.app/"
+              >
+                <button class="preview button-prime">live preview</button>
+              </a>
+              <button class="preview button-sec">source</button>
+            </div>
+          </div>
+        </div>
+        <div class="container wrap" id="kenal_section">
+          <div class="project-cap">
+            <h3 class="project-cap-name">Kenal</h3>
+            <p class="project-cap-desc">
+              Kenal is a social media web app with full features that allows
+              users to stay connected in realtime.
+            </p>
+            <!-- <br /> -->
+            <div class="project-features">
+              <h3 class="features-text">FEATURES</h3>
+              <small class="features-lists">
+                realtime / posts / stories / comments / replies / chats /
+                reactions / relations / notifications / privacy / settings /
+                blockings / images & videos
+              </small>
+            </div>
+            <div class="project-techs">
+              <h3 class="techs-text">STACKS</h3>
+              <ul class="techs-lists">
+                <li>nextjs</li>
+                <li>tailwind</li>
+                <li>firebase-firestore</li>
+                <li>firebase-auth</li>
+                <li>firebase-storage</li>
+                <li>zustand</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <button class="preview button-prime">live preview</button>
+              <button class="preview button-sec">source</button>
+            </div>
           </div>
           <div class="card-div">
             <div class="card" id="kenal_card">
               <img
                 src="/assets/projects/kenal/main.png"
                 alt="project preview"
-                class="card-img card-img-0"
+                class="card-img-0"
               />
               <img
                 src="/assets/projects/kenal/header1.png"
@@ -144,23 +292,21 @@
                 alt="project preview"
                 class="card-img card-img-1"
               />
+              <img
+                src="/assets//images/right-arrow.png"
+                class="arrow-r"
+                alt=""
+              />
             </div>
           </div>
         </div>
-        <div class="container" id="lango_section">
-          <div class="extra">
-            <h3 class="project-item-name">TOKO</h3>
-            <p class="project-item-desc">
-              Toko is a full E-commerce platform with payment features this is
-              built with nextjs,material ui,mongodb, redux-toolkit and others.
-            </p>
-          </div>
+        <div class="container wrap-reverse" id="lango_section">
           <div class="card-div">
             <div class="card" id="lango_card">
               <img
                 src="/assets/projects/lango/1.png"
                 alt="project preview"
-                class="card-img card-img-1"
+                class="card-img-1"
               />
               <img
                 src="/assets/projects/lango/2.png"
@@ -194,224 +340,234 @@
               />
             </div>
           </div>
-        </div>
-        <div class="container" id="toko_section">
-          <div class="extra">
-            <h3 class="project-item-name">TOKO</h3>
-            <p class="project-item-desc">
-              Toko is a full E-commerce platform with payment features this is
-              built with nextjs,material ui,mongodb, redux-toolkit and others.
+          <div class="project-cap">
+            <h3 class="project-cap-name">Lango</h3>
+            <p class="project-cap-desc">
+              Lango is a <span class="high">Language Learning Web</span> App
+              similar to doulingo. this app implements TPRS method to aquire
+              language naturally.
             </p>
-          </div>
-          <div class="card-div">
-            <div class="card" id="toko_card">
-              <div class="lango-card-1">
-                <img
-                  src="/assets/projects/toko/all.png"
-                  alt="project preview"
-                  class="card-img card-img-1"
-                />
-                <img
-                  src="/assets/projects/toko/side.png"
-                  alt="project preview"
-                  class="card-img card-img-3"
-                />
-              </div>
-              <div class="lango-card-2 card-img">
-                <img
-                  src="/assets/projects/toko/checkout-main.png"
-                  alt="project preview"
-                  class="card-img card-img-3 shadow"
-                />
-                <img
-                  src="/assets/projects/toko/checkout-last.png"
-                  alt="project preview"
-                  class="card-img card-img-5"
-                />
-              </div>
-              <div class="lango-card-3 card-img">
-                <img
-                  src="/assets/projects/toko/single-main.png"
-                  alt="project preview"
-                  class="card-img card-img-3 shadow"
-                />
-                <img
-                  src="/assets/projects/toko/single-last.png"
-                  alt="project preview"
-                  class="card-img card-img-5"
-                />
-              </div>
+            <div class="project-features">
+              <h3 class="features-text">FEATURES</h3>
+              <small class="features-lists">
+                play-conversations | play-select | play-match | audio & images |
+                responsive | languages > levels > lessons
+              </small>
+            </div>
+            <div class="project-techs">
+              <h3 class="techs-text">STACKS</h3>
+              <ul class="techs-lists">
+                <li>next Js</li>
+                <li>tailwind</li>
+                <li>firebase-firestore</li>
+                <li>firebase-storage</li>
+                <li>zustand</li>
+                <li>rapid-api</li>
+                <li>axios</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a target="_blank" href="https://lango-two.vercel.app/">
+                <button class="preview button-prime">live preview</button>
+              </a>
+              <button class="preview button-sec">source</button>
             </div>
           </div>
         </div>
-        <div class="container" id="tasky_section">
-          <div class="extra">
-            <h3 class="project-item-name">TOKO</h3>
-            <p class="project-item-desc">
-              Toko is a full E-commerce platform with payment features this is
-              built with nextjs,material ui,mongodb, redux-toolkit and others.
+        <div class="container wrap" id="toko_section">
+          <div class="project-cap">
+            <h3 class="project-cap-name">Toko</h3>
+            <p class="project-cap-desc">
+              Toko is a full Ecommerce web-app with full features ranging from
+              querying items to payments and orders status.
             </p>
+            <!-- <br /> -->
+            <div class="project-features">
+              <h3 class="features-text">FEATURES</h3>
+              <small class="features-lists">
+                search & filters / cart-list / user Profile - account /
+                transactions / categories / checkouts & payments / carts &
+                notification / responsive
+              </small>
+            </div>
+            <div class="project-techs">
+              <h3 class="techs-text">STACKS</h3>
+              <ul class="techs-lists">
+                <li>next Js</li>
+                <li>typescript</li>
+                <li>material UI</li>
+                <li>tailwind</li>
+                <li>auth0</li>
+                <li>redux-toolkit</li>
+                <li>mongodb</li>
+                <li>graphQL</li>
+                <li>zustand</li>
+                <li>stripe</li>
+                <li>cloudinary</li>
+                <li>emotion</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <button class="preview button-prime">live preview</button>
+              <button class="preview button-sec">source</button>
+            </div>
           </div>
-          <div class="card-div">
-            <div class="card" id="tasky_card">
-              <div class="tasky-card-1 card-img">
-                <img
-                  src="/assets/projects/tasky/main-main.png"
-                  alt="project preview"
-                  class="card-img card-img-1"
-                />
-                <img
-                  src="/assets/projects/tasky/main-header.png"
-                  alt="project preview"
-                  class="card-img card-img-4"
-                />
-                <img
-                  src="/assets/projects/tasky/darsboard-main.png"
-                  alt="project preview"
-                  class="card-img card-img-3"
-                />
-                <img
-                  src="/assets/projects/tasky/darsboard-last.png"
-                  alt="project preview"
-                  class="card-img card-img-5"
-                />
-              </div>
-              <div class="tasky-card-2 card-img">
-                <img
-                  src="/assets/projects/tasky/template.png"
-                  alt="project preview"
-                  class="card-img card-img-4"
-                />
-              </div>
-              <div class="tasky-card-3 card-img">
-                <img
-                  src="/assets/projects/tasky/classes.png"
-                  alt="project preview"
-                  class="card-img card-img-7"
-                />
-              </div>
-              <div class="tasky-card-4 card-img">
-                <img
-                  src="/assets/projects/tasky/play.png"
-                  alt="project preview"
-                  class="card-img card-img-9"
-                />
-              </div>
+          <div class="card-div multi-card">
+            <div class="card" id="toko_card">
+              <img
+                src="/assets/projects/toko/all.png"
+                alt="project preview"
+                class="card-img-1"
+              />
+              <img
+                src="/assets/projects/toko/all.png"
+                alt="project preview"
+                class="card-img card-img-1"
+              />
+              <img
+                src="/assets/projects/toko/side.png"
+                alt="project preview"
+                class="card-img card-img-3"
+              />
+
+              <img
+                src="/assets/projects/toko/checkout-main.png"
+                alt="project preview"
+                class="card-img card-img-3"
+              />
+              <img
+                src="/assets/projects/toko/checkout-last.png"
+                alt="project preview"
+                class="card-img card-img-5"
+              />
+              <img
+                src="/assets/projects/toko/single-main.png"
+                alt="project preview"
+                class="card-img card-img-3"
+              />
+              <img
+                src="/assets/projects/toko/single-last.png"
+                alt="project preview"
+                class="card-img card-img-5"
+              />
             </div>
           </div>
         </div>
 
+        <!-- Mini Projects -->
+
         <section id="project-main">
-          <div class="project-item" onclick="go">
-            <img
-              src="/assets/projects/pro1.png"
-              alt="project preview"
-              class="project-item-img"
-            />
-            <h3 class="project-item-name">toko</h3>
-            <p class="project-item-desc">
-              Toko is a full E-commerce platform with payment features this is
-              built with nextjs,material ui,mongodb, redux-toolkit and others.
-            </p>
-            <div class="project-footer">
-              <a href="">
-                <small class="project-preview-link">Preview</small>
-              </a>
-              <a href="" class="github">
-                <img
-                  src="/assets/images/github.png"
-                  alt="github link"
-                  style="height: 25px; width: 25px"
-                />
-              </a>
+          <h2 id="mini-project-title">Other Projects</h2>
+          <p id="mini-project-subtitle">
+            these are my small to medium projects
+          </p>
+          <div class="mini-projects-lists">
+            <div class="project-item">
+              <div class="proj-img img-1"></div>
+              <h3 class="project-item-name">toko</h3>
+              <p class="project-item-desc">
+                Toko is a full E-commerce platform with payment features.
+              </p>
+              <div class="project-footer">
+                <a href="">
+                  <small class="project-preview-link">Preview</small>
+                </a>
+                <a href="" class="github">
+                  <img
+                    src="/assets/images/github.png"
+                    alt="github link"
+                    style="height: 25px; width: 25px"
+                  />
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="project-item">
-            <img
-              src="/assets/projects/pro2.png"
-              alt=""
-              class="project-item-img"
-            />
-            <h3 class="project-item-name">Kenal</h3>
-            <p class="project-item-desc">
-              Kenal is a social media web app with lots of features such as
-              posting, commenting, react and liking, chating, settings,
-              notifications, relations, stories, privacy and blockings.
-            </p>
-            <div class="project-footer">
-              <a href="">
-                <small class="project-preview-link">Preview</small>
-              </a>
-              <a href="" class="github">
-                <img
-                  src="/assets/images/github.png"
-                  alt="github link"
-                  style="height: 25px; width: 25px"
-                />
-              </a>
+            <div class="project-item">
+              <!-- <img
+                src="/assets/projects/pro2.png"
+                alt=""
+                class="project-item-img"
+              /> -->
+              <div class="proj-img img-2"></div>
+
+              <h3 class="project-item-name">Kenal</h3>
+              <p class="project-item-desc">
+                Kenal is a social media web app with lots of features such as
+                posting, commenting.
+              </p>
+              <div class="project-footer">
+                <a href="">
+                  <small class="project-preview-link">Preview</small>
+                </a>
+                <a href="" class="github">
+                  <img
+                    src="/assets/images/github.png"
+                    alt="github link"
+                    style="height: 25px; width: 25px"
+                  />
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="project-item">
-            <img
-              src="/assets/projects/pro3.png"
-              alt=""
-              class="project-item-img"
-            />
-            <h3 class="project-item-name">taskly</h3>
-            <p class="project-item-desc">
-              tasky is an online task manager web app that emplements creating
-              classes, lists and topics and then task. it has features like
-              quiz, play, templates etc.
-            </p>
-            <div class="project-footer">
-              <a href="">
-                <small class="project-preview-link">Preview</small>
-              </a>
-              <a href="" class="github">
-                <img
-                  src="/assets/images/github.png"
-                  alt="github link"
-                  style="height: 25px; width: 25px"
-                />
-              </a>
+            <div class="project-item">
+              <!-- <img
+                src="/assets/projects/pro3.png"
+                alt=""
+                class="project-item-img"
+              /> -->
+              <div class="proj-img img-3"></div>
+
+              <h3 class="project-item-name">taskly</h3>
+              <p class="project-item-desc">
+                tasky is an online task manager web app that emplements
+                creating.
+              </p>
+              <div class="project-footer">
+                <a href="">
+                  <small class="project-preview-link">Preview</small>
+                </a>
+                <a href="" class="github">
+                  <img
+                    src="/assets/images/github.png"
+                    alt="github link"
+                    style="height: 25px; width: 25px"
+                  />
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="project-item">
-            <img
-              src="/assets/projects/pro4.png"
-              alt=""
-              class="project-item-img"
-            />
-            <h3 class="project-item-name">Lango</h3>
-            <p class="project-item-desc">
-              Lango is a language learning app similar to doulingo. it's
-              features implements a TPRS method to aquire language naturaly and
-              fun.
-            </p>
-            <div class="project-footer">
-              <a href="">
-                <small class="project-preview-link">Preview</small>
-              </a>
-              <a href="" class="github">
-                <img
-                  src="/assets/images/github.png"
-                  alt="github link"
-                  style="height: 25px; width: 25px"
-                />
-              </a>
+            <div class="project-item">
+              <!-- <img
+                src="/assets/projects/pro4.png"
+                alt=""
+                class="project-item-img"
+              /> -->
+              <div class="proj-img img-4"></div>
+
+              <h3 class="project-item-name">Lango</h3>
+              <p class="project-item-desc">
+                Lango is a language learning app similar to doulingo. it's.
+              </p>
+              <div class="project-footer">
+                <a href="">
+                  <small class="project-preview-link">Preview</small>
+                </a>
+                <a href="" class="github">
+                  <img
+                    src="/assets/images/github.png"
+                    alt="github link"
+                    style="height: 25px; width: 25px"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </section>
       </div>
 
       <!-- STACKS -->
-      <!-- <span id="stacks-anchor" style="margin-bottom: 50px"></span> -->
       <div id="stacks-main">
         <h2 id="stack-title">My Stacks</h2>
         <p id="stack-subtitle">
-          these are the technologies that i had used and prefered depending on
-          what project i'm going to developed. most of theme i'd used in
-          developing my four projects listed above. more of these in my resumee
+          these are the technologies that i had used and maintain to use and
+          prefered to use on whichever type of project.
         </p>
         <section id="stacks-contents">
           <div
@@ -476,7 +632,6 @@
               </ul>
             </div>
           </div>
-
           <!-- frontend - backend stacks -->
           <div
             style="
@@ -488,7 +643,7 @@
             "
           >
             <div class="stack-item">
-              <h4 class="stack-item-title">Front-end</h4>
+              <h4 class="stack-item-title">Frameworks</h4>
               <ul class="stack-lists">
                 <li class="stack-list">
                   <img
@@ -509,55 +664,110 @@
               </ul>
             </div>
             <div class="stack-item">
-              <h4 class="stack-item-title">Back-end</h4>
+              <h4 class="stack-item-title">Testing</h4>
               <ul class="stack-lists">
                 <li class="stack-list">
                   <img
-                    src="/assets/stacks/node.png"
+                    src="/assets/stacks/jest.png"
                     alt=""
                     class="stack-list-img"
                   />
-                  <p class="stack-list-name">nodejs</p>
+                  <p class="stack-list-name">jest</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/cypress.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">cypress</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/husky.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">husky</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/eslint.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">esLint</p>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="stack-item">
-            <h4 class="stack-item-title">Databases</h4>
-            <ul class="stack-lists">
-              <li class="stack-list">
-                <img
-                  src="/assets/stacks/firestore.png"
-                  alt=""
-                  class="stack-list-img"
-                />
-                <p class="stack-list-name">firebase-firestore</p>
-              </li>
-              <li class="stack-list">
-                <img
-                  src="/assets/stacks/storage.png"
-                  alt=""
-                  class="stack-list-img"
-                />
-                <p class="stack-list-name">firebase-storage</p>
-              </li>
-              <li class="stack-list">
-                <img
-                  src="/assets/stacks/mongo.png"
-                  alt=""
-                  class="stack-list-img"
-                />
-                <p class="stack-list-name">mongodb</p>
-              </li>
-              <li class="stack-list">
-                <img
-                  src="/assets/stacks/postgress.png"
-                  alt=""
-                  class="stack-list-img"
-                />
-                <p class="stack-list-name">postgress</p>
-              </li>
-            </ul>
+          <div
+            style="
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              max-width: 300px;
+            "
+          >
+            <div class="stack-item">
+              <h4 class="stack-item-title">Databases</h4>
+              <ul class="stack-lists">
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/firestore.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">firebase-firestore</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/storage.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">firebase-storage</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/mongo.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">mongodb</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/postgress.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">postgress</p>
+                </li>
+              </ul>
+            </div>
+            <div class="stack-item">
+              <h4 class="stack-item-title">Version Control</h4>
+              <ul class="stack-lists">
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/git.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">git</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/github.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">github</p>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="stack-item">
             <h4 class="stack-item-title">Api</h4>
@@ -580,11 +790,11 @@
               </li>
               <li class="stack-list">
                 <img
-                  src="/assets/stacks/mongo.png"
+                  src="/assets/stacks/restful.png"
                   alt=""
                   class="stack-list-img"
                 />
-                <p class="stack-list-name">XML/fetch</p>
+                <p class="stack-list-name">Restful Api</p>
               </li>
               <li class="stack-list">
                 <img
@@ -620,104 +830,254 @@
               </li>
             </ul>
           </div>
-          <div class="stack-item">
-            <h4 class="stack-item-title">Authentication</h4>
-            <ul class="stack-lists">
-              <li class="stack-list">
-                <img
-                  src="/assets/stacks/auth.png"
-                  alt=""
-                  class="stack-list-img"
-                />
-                <p class="stack-list-name">firebase-auth</p>
-              </li>
-              <li class="stack-list">
-                <img
-                  src="/assets/stacks/auth0.png"
-                  alt=""
-                  class="stack-list-img"
-                />
-                <p class="stack-list-name">auth0</p>
-              </li>
-              <li class="stack-list">
-                <img
-                  src="/assets/stacks/nextauht.png"
-                  alt=""
-                  class="stack-list-img"
-                />
-                <p class="stack-list-name">next-auth</p>
-              </li>
-            </ul>
+          <div
+            style="
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              max-width: 300px;
+            "
+          >
+            <div class="stack-item">
+              <h4 class="stack-item-title">Authentication</h4>
+              <ul class="stack-lists">
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/auth.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">firebase-auth</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/auth0.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">auth0</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/nextauht.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">next-auth</p>
+                </li>
+              </ul>
+            </div>
+            <div class="stack-item">
+              <h4 class="stack-item-title">Hosting</h4>
+              <ul class="stack-lists">
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/vercel.svg"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">vercel</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/heroku.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">heroku</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/netlify.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">netlify</p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="stack-item">
-            <h4 class="stack-item-title">States Management</h4>
-            <ul class="stack-lists">
-              <li class="stack-list">
-                <img
-                  src="/assets/stacks/redux.png"
-                  alt=""
-                  class="stack-list-img"
-                />
-                <p class="stack-list-name">redux-toolkit</p>
-              </li>
-              <li class="stack-list">
-                <img
-                  src="/assets/stacks/zustand.png"
-                  alt=""
-                  class="stack-list-img"
-                />
-                <p class="stack-list-name">zustand</p>
-              </li>
-              <li class="stack-list">
-                <img
-                  src="/assets/stacks/reactquery.png"
-                  alt=""
-                  class="stack-list-img"
-                />
-                <p class="stack-list-name">react-query</p>
-              </li>
-            </ul>
+          <div
+            style="
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              max-width: 300px;
+            "
+          >
+            <div class="stack-item">
+              <h4 class="stack-item-title">States Management</h4>
+              <ul class="stack-lists">
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/redux.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">redux-toolkit</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/zustand.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">zustand</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/reactquery.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">react-query</p>
+                </li>
+              </ul>
+            </div>
+            <div class="stack-item">
+              <h4 class="stack-item-title">Tools</h4>
+              <ul class="stack-lists">
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/clickup.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">clickUp</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/figma.svg"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">figma</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/xmind.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">Xmind</p>
+                </li>
+                <li class="stack-list">
+                  <img
+                    src="/assets/stacks/photoshop.png"
+                    alt=""
+                    class="stack-list-img"
+                  />
+                  <p class="stack-list-name">photoshop</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
+        <p id="stack-subtitle" style="padding-top: 12px">
+          I am currently learning <span class="high">Cypress</span>,
+          <span class="high">Docker</span> and
+          <span class="high">Kubernetes</span>.
+        </p>
       </div>
 
-      <!-- CONTACT -->
-      <span id="contac-anchor" style="margin-bottom: d100px"></span>
-      <section id="contact-main">
-        <h2 id="contact-title">Conact Me</h2>
-        <form action="#contac-anchor" id="contact-form">
-          <span class="form-field">
-            <label for="email" class="form-label">Email Address</label>
-            <input id="email" class="form-input" type="email" required />
-          </span>
-          <span class="form-field">
-            <label for="email" class="form-label">first name</label>
-            <input id="name" class="form-input" type="text" />
-          </span>
-          <span class="form-field">
-            <label for="email" class="form-label">message</label>
-            <textarea
-              id="message"
-              class="form-input"
-              type="text"
-              required
-            ></textarea>
-          </span>
-          <button id="form-submit-button" type="submit">Send Message</button>
-        </form>
-        <div id="contact-footer">
-          <a href="/file/resume.doc" target="_blank">Download My Resume</a>
-          <div title="click to copy">
-            <small> email me on : </small>
-            <p id="gmail">adimaraisha@gmail.com</p>
+      <!-- ABOUT ME -->
+      <section id="about-main" class="about-main">
+        <h2 class="about-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-img-div">
+            <div class="about-img"></div>
           </div>
-          <small>find me on</small>
-          <div style="display: flex; gap: 10px; align-items: center">
-            <img src="/assets/images/fb.png" alt="" />
-            <img src="/assets/images/github.png" alt="" />
+          <div class="about-texts" style="padding: 16px">
+            <div class="about-text-group">
+              <h3 class="about-hello">Hi Again,</h3>
+              <h4 class="about-about">
+                the only real thing about me is that i only do what i really
+                love to do on which i'm passionate about.
+              </h4>
+            </div>
+            <div class="about-text-group about-passion">
+              <h4 class="about-text-heading">I Love</h4>
+              <div class="about-text-lists">
+                Programming, Designing, Music & Arts, Animating and much more
+              </div>
+            </div>
+            <div class="about-text-group about-personality">
+              <h4 class="about-text-heading">I Am</h4>
+              <div class="about-text-lists">
+                a CURIOUS person, an Introvert, animator, enthusiast, language
+                lover
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- CONTACT -->
+      <div class="bottom-div">
+        <img
+          class="bottom about-bottom-2"
+          src="/assets/images/hero-buttom-2.svg"
+          alt=""
+        />
+        <img
+          class="bottom about-bottom-1"
+          src="/assets/images/hero-bottom-3.svg"
+          alt=""
+        />
+      </div>
+      <span id="contac-anchor" style="margin-bottom: d100px"></span>
+      <section id="contact-main">
+        <div id="contact-div">
+          <form action="#contac-anchor" id="contact-form">
+            <h2 id="contact-title">Conact Me</h2>
+            <span class="form-field">
+              <label for="email" class="form-label">Email Address</label>
+              <input id="email" class="form-input" type="email" required />
+            </span>
+            <span class="form-field">
+              <label for="email" class="form-label">first name</label>
+              <input id="name" class="form-input" type="text" />
+            </span>
+            <span class="form-field">
+              <label for="email" class="form-label">message</label>
+              <textarea
+                id="message"
+                class="form-input"
+                type="text"
+                required
+              ></textarea>
+            </span>
+            <button id="form-submit-button" class="button-prime" type="submit">
+              Send Message
+            </button>
+          </form>
+
+          <div class="bottom contact-bottom-1"></div>
+          <div class="bottom contact-bottom-2"></div>
+        </div>
+
+        <div id="contact-footer-div">
+          <div id="contact-footer">
+            <a href="/file/resume.doc" target="_blank">Download My Resume</a>
+            <div class="email-div" title="click to copy">
+              <small> email me on : </small>
+              <p id="email">adimaraisha@gmail.com</p>
+            </div>
+            <div class="social-links">
+              <small>Connect With Me </small>
+              <div style="display: flex; gap: 10px; align-items: center">
+                <img src="/assets/images/linkedin.png" alt="My Facebook Link" />
+                <img src="/assets/images/github.png" alt="My Github Link" />
+                <img src="/assets/images/fb.png" alt="My Facebook Link" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
       <footer id="footer-main">
         <p>&copy 2022 Adimar Alimuddin Portfolio</p>
       </footer>
@@ -725,4 +1085,5 @@
   </body>
   <script src="/fancyScript.js"></script>
   <script src="/function.js"></script>
+  <!-- <script src="/animation.js"></script> -->
 </html>

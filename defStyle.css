@@ -18,6 +18,7 @@ li {
 a {
   text-decoration: none;
   padding: 5px;
+  
 }
 
 a:hover {
@@ -25,11 +26,34 @@ a:hover {
 }
 
 button {
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-radius: 20px;
-  border: 2px solid black;
+  border: 2px solid rgba(107, 64, 187, 0.637);
+  color: rgba(107, 64, 187, 0.637);
   background-color: transparent;
   /* color: purple; */
   cursor: pointer;
 }
 
+.button-prime {
+  border-radius: 50px;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  background: linear-gradient(
+    91.56deg,
+    rgba(66, 64, 187, 0.63) 1.6%,
+    rgba(203, 62, 206, 0.3) 96.85%
+  );
+}
+.button-prime:hover {
+}
+
+input,
+textarea {
+  border-color: linear-gradient(
+    91.56deg,
+    rgba(66, 64, 187, 0.63) 1.6%,
+    rgba(203, 62, 206, 0.3) 96.85%
+  );
+}

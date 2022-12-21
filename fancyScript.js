@@ -1,33 +1,83 @@
 let header = document.getElementById("header");
 const tog = document.getElementById("toggle");
+const burger = document.getElementById("burger");
+const herBottom1 = document.getElementById("hero-bottom-1");
+const herBottom2 = document.getElementById("hero-bottom-2");
+const herBottom3 = document.getElementById("hero-bottom-3");
+const heroTexts = document.getElementById("caption-text");
+const mobileMenus = document.getElementById("mobile-menus");
 
+function toggleIconState(theme = "dark") {}
+
+function toggleHeaderState(active = true) {
+  if (active) {
+    header.classList.add("active-header");
+    header.classList.remove("inactive-header");
+    if (tog.src.includes("moon")) {
+      tog.src = "/assets/images/moonblack.png";
+      burger.src = "/assets/images/menu-dark.png";
+    }
+  } else {
+    header.classList.add("inactive-header");
+    header.classList.remove("active-header");
+    if (tog.src.includes("moon")) {
+      tog.src = "/assets/images/moon.png";
+      burger.src = "/assets/images/menu-light.png";
+    }
+  }
+}
+function toggleMenu(e) {
+  // when burger menu clicked
+  if (header.classList.contains("show")) {
+    header.classList.remove("show");
+    if (header.offsetTop <= 0) {
+      toggleHeaderState(false);
+    }
+  } else {
+    header.classList.add("show");
+    toggleHeaderState(true);
+  }
+}
+
+burger.onclick = toggleMenu;
+mobileMenus.onclick = toggleMenu;
 tog.onclick = function (e) {
+  // toggle theme
   document.body.classList.toggle("dark-mode");
   if (document.body.classList.contains("dark-mode")) {
     e.target.src = "/assets/images/sun.png";
+    burger.src = "/assets/images/menu-light.png";
   } else {
     if (header.offsetTop > 0) {
       e.target.src = "/assets/images/moonblack.png";
     } else {
       e.target.src = "/assets/images/moon.png";
+      if (header.classList.contains("show")) {
+        toggleHeaderState(true);
+      } else {
+      }
     }
   }
 };
 
 window.onload = function (e) {
   document.body.onscroll = function (e) {
+    let value = window.scrollY;
     if (header.offsetTop > 0) {
-      header.classList.add("active-header");
-      header.classList.remove("inactive-header");
-      if (tog.src.includes("moon")) {
-        tog.src = "/assets/images/moonblack.png";
-      }
+      toggleHeaderState(true);
     } else {
-      header.classList.add("inactive-header");
-      header.classList.remove("active-header");
-      if (tog.src.includes("moon")) {
-        tog.src = "/assets/images/moon.png";
+      if (!header.classList.contains("show")) {
+        toggleHeaderState(false);
       }
+    }
+    herBottom1.style.bottom = value / -3 + 50 + "px";
+    herBottom2.style.bottom = value / -4 + 20 + "px";
+
+    heroTexts.style.top = 40 + value / 9 + "%";
+    if (header.offsetTop > 800) {
+      heroTexts.style.position = "relative";
+    } else {
+      heroTexts.style.position = "absolute";
     }
   };
 };
@@ -35,10 +85,10 @@ window.onload = function (e) {
 var typingElement = document.querySelector(".typing-text");
 
 var typeArray = [
-  " have a college degree also a self taught.",
-  "'m passionate on what i do.",
-  " play slow-rock musics while coding",
-  " strive for cusscess on my goal",
+  " have a college degree also a self taught.📚💻",
+  "'m passionate on what i do.💖",
+  " play musics while coding!🎸",
+  " strive for cusscess on my goal.💪",
 ];
 var index = 0,
   isAdding = true,
@@ -74,7 +124,7 @@ function playAnim() {
       playAnim();
     },
 
-    isAdding ? 60 : 20
+    isAdding ? 35 : 10
   );
 }
 

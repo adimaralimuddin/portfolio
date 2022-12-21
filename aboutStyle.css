@@ -1,0 +1,81 @@
+.about-main {
+  position: sticky;
+  top: 0;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  background: var(--about-bg);
+  padding: auto 30px;
+  padding-bottom: 100px;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.about-title {
+  color: var(--title);
+}
+.about-img-div {
+  position: relative;
+  flex: 1;
+  max-width: 300px;
+  min-width: 200px;
+}
+.about-img {
+  background-image: url("/assets//images/adimar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 1/1;
+  border: 7px solid white;
+  max-width: 150px;
+  width: 100%;
+  border-radius: 100%;
+  margin: auto;
+}
+.about-texts {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 250px;
+  max-width: 600px;
+  color: var(--heading);
+}
+.about-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.about-hello {
+  font-size: 1.4rem;
+  padding-bottom: 5px;
+}
+.about-about {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.about-text-heading {
+  color: var(--heading);
+}
+.about-text-lists {
+  color: var(--text);
+}
+
+.bottom {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  background-size: auto;
+}
+
+.dark-mode .about-bottom-1 {
+  content: url("/assets/images/about-bottom-dark-1.svg");
+}
+.dark-mode .about-bottom-2 {
+  content: url("/assets/images/about-bottom-dark-2.svg");
+}

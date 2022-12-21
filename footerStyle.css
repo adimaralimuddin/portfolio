@@ -1,0 +1,12 @@
+#footer-main {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(27, 27, 34);
+  color: rgb(139, 145, 165);
+  z-index: 40;
+}
+.dark-mode #footer-main {
+  background-color: rgb(16, 13, 20);
+}

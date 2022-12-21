@@ -1,0 +1,43 @@
+.bottom-div {
+  position: relative;
+  /* width: 100%; */
+}
+
+.bottom {
+  position: absolute;
+  width: 100%;
+  min-height: 18%;
+  bottom: -100px;
+  transform: translateX(-50%);
+  left: 0;
+  animation: bottom-animate 3s alternate infinite ease-in-out;
+  background-position: top;
+
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* height: 200px; */
+}
+
+.bottom-2 {
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+/* 
+.bottom-2 {
+  bottom: 5%;
+  animation-delay: 2s;
+  animation-duration: 3s;
+}
+.bottom-3 {
+  z-index: 2;
+  animation-delay: 2s;
+} */
+
+@keyframes bottom-animate {
+  0% {
+    transform: translateY(0px) translateX(0%) scale(1);
+  }
+  100% {
+    transform: translateY(15px) translateX(5%) scaleX(1.3);
+  }
+}
