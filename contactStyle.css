@@ -32,6 +32,7 @@
   width: 90%;
   color: var(--text);
   row-gap: 10px;
+  /* font-family: Helvetica, sans-serif; */
 }
 #contact-title {
   padding-top: 10px;
@@ -46,7 +47,14 @@
   flex: 1;
 }
 .form-field label {
-  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.716);
+  font-weight: 600;
+  /* font-size: 1rem; */
+}
+.dark-mode .form-field label {
+  color: rgba(212, 212, 234, 0.874);
+  font-weight: 600;
+  /* font-size: 1rem; */
 }
 .form-field input,
 .form-field textarea {
@@ -57,30 +65,55 @@
   border-width: 1px;
   border: 1px solid var(--text);
   font-size: 1rem;
+  color: black;
+}
+.dark-mode .form-field input,
+.form-field textarea {
+  color: rgba(255, 255, 255, 0.611);
 }
 .form-field textarea {
   height: 50px;
   min-height: 50px;
   max-height: 150px;
   resize: vertical;
+  color: rgb(53, 52, 58);
 }
 #form-submit-button {
   font-size: 1.05rem;
   border: none;
-  padding: 15px 20px;
+  padding: 10px 20px;
   flex: 1;
+  font-size: 1rem;
+}
+
+#resume-button {
   font-size: 1.2rem;
+  margin: 15px 0px;
+  font-weight: 600;
+  color: rebeccapurple;
+}
+
+.dark-mode #resume-button {
+  color: rgb(215, 191, 239);
+}
+
+#resume-button:hover {
+  text-decoration: underline;
 }
 #contact-footer-div {
   flex: 1;
+  /* border: 1px solid red; */
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   background-color: var(--contact-footer-bg);
   padding: 50px 5%;
   position: relative;
+  /* background-color: rgb(46, 16, 67); */
 }
 #contact-footer {
+  /* border: 1px solid red; */
+
   display: flex;
   flex: 1;
   gap: 10px;
@@ -92,7 +125,6 @@
   padding: 10px;
   color: white;
   max-width: 1000px;
-  margin: auto;
   align-content: center;
   gap: 24px 48px;
 }
@@ -111,25 +143,15 @@
   color: rgb(173, 185, 201);
 }
 
+.dark-mode #footer-copy {
+  color: rgb(159, 151, 173);
+}
+
 #contact-footer img {
   width: 40px;
 }
 #contact-footer .email-div {
   font-weight: 400;
-}
-.email-div {
-  text-align: center;
-  /* border: 1px solid red; */
-  flex: 1;
-}
-
-#email {
-  font-size: 1.2rem;
-  font-weight: 400;
-  font-weight: 600;
-}
-.dark-mode #email {
-  color: rgb(136, 135, 153);
 }
 
 .social-links {
@@ -138,7 +160,7 @@
   /* border: 1px solid red; */
   flex: 1;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 .social-links small {
   font-weight: 400;

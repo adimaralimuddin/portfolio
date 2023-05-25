@@ -27,6 +27,7 @@ function toggleHeaderState(active = true) {
   }
 }
 function toggleMenu(e) {
+  console.log("hei");
   // when burger menu clicked
   if (header.classList.contains("show")) {
     header.classList.remove("show");
@@ -85,10 +86,9 @@ window.onload = function (e) {
 var typingElement = document.querySelector(".typing-text");
 
 var typeArray = [
-  " have a college degree also a self taught.📚💻",
-  "'m passionate on what i do.💖",
-  " play musics while coding!🎸",
-  " strive for cusscess on my goal.💪",
+  " earned a College Degree + Self Taught.📚💻",
+  "'m passionate and Highly Motivated.💖",
+  " Love to Learn New Things!",
 ];
 var index = 0,
   isAdding = true,

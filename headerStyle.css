@@ -7,16 +7,18 @@
   top: 0;
   transition: all 0.4s;
   z-index: 50;
+  font-size: 1.1rem;
 }
 #header-content {
   flex: 1;
+  /* border: 1px solid red;    */
   width: 90%;
   align-items: center;
   justify-content: space-between;
   white-space: nowrap;
   flex-wrap: wrap;
   display: flex;
-  max-width: 900px;
+  max-width: 1000px;
   padding: 0px 20px;
 }
 .inactive-header {
@@ -31,7 +33,7 @@
   background-color: rgba(22, 34, 41, 0.966);
 }
 #logo {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .inactive-header #logo {
   color: var(--menu);
@@ -56,6 +58,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 20px;
 }
 .menu a {
   font-weight: bold;
@@ -127,5 +130,5 @@
 }
 
 .dark-mode .mobile-menu a {
-  color: white;
+  color: rgb(152, 106, 106);
 }

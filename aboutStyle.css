@@ -1,6 +1,6 @@
 .about-main {
-  position: sticky;
-  top: 0;
+  /* position: sticky; */
+  /* top: 0; */
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -61,9 +61,11 @@
 }
 .about-text-heading {
   color: var(--heading);
+  font-size: 1.2rem;
 }
 .about-text-lists {
   color: var(--text);
+  font-size: 1.1rem;
 }
 
 .bottom {

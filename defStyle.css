@@ -2,7 +2,9 @@
   margin: 0px;
   padding: 0px;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 ul {
   list-style: none;
   display: flex;
@@ -18,42 +20,58 @@ li {
 a {
   text-decoration: none;
   padding: 5px;
-  
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 button {
   padding: 8px 20px;
-  border-radius: 20px;
-  border: 2px solid rgba(107, 64, 187, 0.637);
-  color: rgba(107, 64, 187, 0.637);
+  border: none;
+  /* border-radius: 20px; */
+  /* border: 2px solid rgba(107, 64, 187, 0.637); */
+  /* color: rgba(107, 64, 187, 0.637); */
   background-color: transparent;
   /* color: purple; */
   cursor: pointer;
 }
 
 .button-prime {
-  border-radius: 50px;
+  font-size: 0.95rem;
+  border-radius: 5px;
   border: none;
   color: white;
   padding: 10px 25px;
-  background: linear-gradient(
-    91.56deg,
-    rgba(66, 64, 187, 0.63) 1.6%,
-    rgba(203, 62, 206, 0.3) 96.85%
-  );
+  background-color: rgb(107, 70, 157);
 }
+
 .button-prime:hover {
+  background-color: rgb(121, 82, 172);
+}
+.button-sec {
+  font-size: 0.95rem;
+  border-radius: 5px;
+  padding: 10px 25px;
+  /* border: 1px solid gray; */
+  /* background-color: rgb(218, 211, 233); */
+  /* background-color: white; */
+}
+.dark-mode .button-link {
+  color: rgb(216, 192, 248);
+}
+.button-link:visited {
+  /* color: inherit; */
+}
+.button-link:hover {
+  text-decoration: underline;
 }
 
 input,
 textarea {
-  border-color: linear-gradient(
+  /* border-color: linear-gradient(
     91.56deg,
     rgba(66, 64, 187, 0.63) 1.6%,
     rgba(203, 62, 206, 0.3) 96.85%
-  );
+  ); */
 }
